@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B096CBAC-4215-4FC9-8880-A58A1BF1B91F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SmartHS</RootNamespace>
+    <AssemblyName>SmartHS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTechnical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTechnical.Designer.cs">
+      <DependentUpon>frmTechnical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Menus\AdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menus\AdminMain.Designer.cs">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View Forms\AdminView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Forms\AdminView.Designer.cs">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input Forms\CallCentre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input Forms\CallCentre.Designer.cs">
+      <DependentUpon>CallCentre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Menus\CCMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menus\CCMain.Designer.cs">
+      <DependentUpon>CCMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Menus\ContractManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menus\ContractManagement.Designer.cs">
+      <DependentUpon>ContractManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input Forms\NewContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input Forms\NewContract.Designer.cs">
+      <DependentUpon>NewContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input Forms\OrderComponents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input Forms\OrderComponents.Designer.cs">
+      <DependentUpon>OrderComponents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Menus\PMMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menus\PMMain.Designer.cs">
+      <DependentUpon>PMMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input Forms\ProductManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input Forms\ProductManagement.Designer.cs">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Input Forms\RegisterCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input Forms\RegisterCustomer.Designer.cs">
+      <DependentUpon>RegisterCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input Forms\RegisterEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input Forms\RegisterEmployee.Designer.cs">
+      <DependentUpon>RegisterEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Forms\TechnicalSupportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Forms\TechnicalSupportView.Designer.cs">
+      <DependentUpon>TechnicalSupportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input Forms\TechSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input Forms\TechSupport.Designer.cs">
+      <DependentUpon>TechSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Menus\TMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menus\TMain.Designer.cs">
+      <DependentUpon>TMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Forms\ViewContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Forms\ViewContract.Designer.cs">
+      <DependentUpon>ViewContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Forms\ViewPhoneRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Forms\ViewPhoneRecords.Designer.cs">
+      <DependentUpon>ViewPhoneRecords.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTechnical.resx">
+      <DependentUpon>frmTechnical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menus\AdminMain.resx">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menus\TMain.resx">
+      <DependentUpon>TMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Forms\AdminView.resx">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input Forms\CallCentre.resx">
+      <DependentUpon>CallCentre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menus\CCMain.resx">
+      <DependentUpon>CCMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menus\ContractManagement.resx">
+      <DependentUpon>ContractManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input Forms\NewContract.resx">
+      <DependentUpon>NewContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input Forms\OrderComponents.resx">
+      <DependentUpon>OrderComponents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menus\PMMain.resx">
+      <DependentUpon>PMMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input Forms\ProductManagement.resx">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input Forms\RegisterCustomer.resx">
+      <DependentUpon>RegisterCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input Forms\RegisterEmployee.resx">
+      <DependentUpon>RegisterEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Forms\TechnicalSupportView.resx">
+      <DependentUpon>TechnicalSupportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input Forms\TechSupport.resx">
+      <DependentUpon>TechSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Forms\ViewContract.resx">
+      <DependentUpon>ViewContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Forms\ViewPhoneRecords.resx">
+      <DependentUpon>ViewPhoneRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{01f9db63-04ec-4bbe-8481-5438f7a69187}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iphone-computer-icons-telephone-call-phone-call-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SHS images\call button.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
